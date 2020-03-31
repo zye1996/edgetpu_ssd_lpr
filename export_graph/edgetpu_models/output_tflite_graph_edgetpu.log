@@ -1,0 +1,13 @@
+Edge TPU Compiler version 2.0.291256449
+Input: detection_model_ssd_300/output_tflite_graph.tflite
+Output: output_tflite_graph_edgetpu.tflite
+
+Operator                       Count      Status
+
+RESHAPE                        13         Mapped to Edge TPU
+LOGISTIC                       1          Mapped to Edge TPU
+ADD                            10         Mapped to Edge TPU
+CUSTOM                         1          Operation is working on an unsupported data type
+CONCATENATION                  2          Mapped to Edge TPU
+CONV_2D                        55         Mapped to Edge TPU
+DEPTHWISE_CONV_2D              17         Mapped to Edge TPU
